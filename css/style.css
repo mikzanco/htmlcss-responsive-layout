@@ -1,5 +1,33 @@
+/* GENERAL */
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.container{
+  margin: 0 30px;
+}
+
+
+header{
+  background-color: #0084fd;
+  height: 75px;
+  color: white;
+}
+
+header .container{
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+header .container .hamb i{
+  font-size: 2.5rem;
+  align-items: center;
 }
