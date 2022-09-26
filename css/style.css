@@ -45,7 +45,7 @@ section{
 }
 
 main section .container .box{
-  /* text-align: center; */
+  text-align: center;
   background-color: #b5ddff;
   border-radius: 50px;
   flex-direction: column;
@@ -62,6 +62,7 @@ main section .container .box h3{
 main section .container .box p{
   margin: 25px;
   font-size: 1.2rem;
+  text-align: start;
  }
  
 
@@ -74,6 +75,10 @@ main section .container .box .button{
   align-items: center;
   justify-content: center;
   margin: 20px auto;
+}
+
+main section .container .box .button i{
+  margin-right: 10px;
 }
 
 main section .container .box .button a{
@@ -110,10 +115,30 @@ main section .container .text{
   text-align: center;
 }
 
-/////////*CLOSE SECTION */////////////
+/*CLOSE SECTION */
 
 
+@media (min-width: 767px){
 
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .box{
+    height: 60px;
+  }
+ 
+  main section .container .box:first-child{
+    width: 60%;
+  }
+
+  main section .container .box.small{
+    width: calc(100% / 3);
+  }
+  
+}
 
 
 
